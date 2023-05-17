@@ -1,5 +1,5 @@
 import React from "react";
-import KakaoBtn from "./kakao_login_medium_narrow.png";
+import KakaoBtn from "../kakao_login_medium_narrow.png";
 
 const KakaoLogIn = () => {
 

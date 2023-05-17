@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css';
 import './reset.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import KakaoLogIn from "./KakaoLogIn";
-import KakaoAuthHandler from "./KakaoAuthHandler";
+import KakaoLogIn from "./components/KakaoLogIn";
+import KakaoAuthHandler from "./components/KakaoAuthHandler";
+import Complete from "./components/Complete";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<KakaoLogIn />}></Route>
                     <Route path="/oauth" element={<KakaoAuthHandler />}></Route>
+                    <Route path="/comp" element={<Complete />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
