@@ -35,16 +35,20 @@ img{
 .input{
     width: 10%;
     min-width: 200px;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin: 20px auto;
 }
-.input label{
+.input .input-label{
+    font-size: 10px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.input input{
     font-size: 13px;
     width: 100%;
-    display: inline-block;
-    margin-right: 5px;
+    display: block;
+    padding: 3px;
 }
 .sign-btn{
     display: block;

@@ -30,7 +30,7 @@ const Info = (userCode: any) => {
     return(
         <form className="Info" onSubmit={handleSubmit}>
             <div className="input">
-                <label>이름 </label>
+                <label className="input-label">이름</label>
                 <input
                     type="text"
                     id="name"
@@ -39,7 +39,7 @@ const Info = (userCode: any) => {
                 />
             </div>
             <div className="input">
-                <label>전화번호 </label>
+                <label className="input-label">전화번호</label>
                 <input
                     type="text"
                     id="number"
