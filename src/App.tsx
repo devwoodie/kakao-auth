@@ -8,6 +8,14 @@ import KakaoBtn from "./kakao_login_medium_narrow.png";
 
 function App() {
 
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://developers.kakao.com/sdk/js/kakao.js";
+        script.async = true;
+        document.head.appendChild(script);
+        console.log(script)
+    }, [])
+
     const REST_API_KEY = process.env.REACT_APP_REST_API_KEY;
     const REDIRECT_URI: string = "http://localhost:3000/oauth";
     const KAKAO_AUTH_URL: string = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;

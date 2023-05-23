@@ -30,6 +30,7 @@ const KakaoLogIn = () => {
 
             )
             console.log(res)
+            // window.Kakao.init()
             // window.Kakao.init(REST_API_KEY);
             // access token 설정
             // window.Kakao.Auth.setAccessToken(res.data.access_token);
